@@ -30,7 +30,7 @@ export default async function Page() {
                     className="w-full mb-6"
                     width={100}
                     height={300}
-                    priority
+                    // priority
                 />
 
 

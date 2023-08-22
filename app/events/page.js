@@ -34,9 +34,12 @@ console.log('events',events)
                                 {event?.description}
                             </label>
 
-                            <Link href={event?.reg_link} className='w-7/12'>
-                                <button className="w-full bg-[#ebdf37] px-4 py-2 mt-4 shadow-md 
+<div>
+<Link href={event?.reg_link} className='w-full '>
+                                <button className="rounded-md  w-7/12 bg-[#ffa100] px-4 py-2 mt-4 shadow-md 
                                 text-black font-regular text-md">Register for Event</button></Link>
+</div>
+                           
                         </div>
 
                     </div>
