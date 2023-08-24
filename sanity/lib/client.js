@@ -1,6 +1,6 @@
 import { createClient, groq } from 'next-sanity'
 
-import { apiVersion, dataset, projectId, useCdn } from '../env'
+import { apiVersion, dataset, projectId, useCdn, token } from '../env'
 
 
 const client = createClient({
@@ -8,15 +8,10 @@ const client = createClient({
   dataset,
   projectId,
   useCdn,
+  token
 })
 
-const postsFields = `
-  _id,
-  title,
-  content,
-  'slug': slug.current,
-  'image': image,
-`
+
 
 export async function fetchBooks() {
   return client.fetch(
@@ -32,6 +27,36 @@ export async function fetchBooks() {
   }`
   )
 }
+
+
+export async function fetchCommunities() {
+  return client.fetch(
+    groq`*[_type=="community"]{
+    _id,
+    _createdAt,
+    title,
+    
+
+  }`
+  )
+}
+
+
+export async function fetchCommunity(slug) {
+  return client.fetch(
+    groq`*[_type=="community" && _id==$_id][0]{
+      _id,
+      _createdAt,
+      title,
+      content,
+      community_link,
+      "image":image.asset->url
+  
+    }`, { _id: slug }
+
+  )
+}
+
 export async function fetchBook(slug) {
   return client.fetch(
     groq`*[_type=="books" && _id==$_id][0]{
@@ -70,40 +95,67 @@ export async function fetchEvents() {
 }
 
 
-// export async function fetchPosts() {
-//   return client.fetch(
-//     groq`*[_type=="posts"]{
-//       title,
-//       content,
-//       "image": image.asset->url,
-//       comments
-//     }`
-//   );
-// }
-// export async function fetchComments() {
-//   return client.fetch(
-//     groq`*[_type=="comments" && post._ref == ^._id]{
-//       name,
-//       comment,
-//       posts
-//     }`
-//   );
-// }
-// export async function fetchComments() {
-//   return client.fetch(
-//     groq`*[_type == "posts"]{
-//       ${postsFields}
+export async function fetchPosts() {
+  return client.fetch(
+    groq`*[_type=="posts"]{
+      title,
+      content,
+      author,
+      slug,
+      "image": image.asset->url
       
-//       'comments': *[_type == "comments" && posts._ref == ^._id]{
-//           _id, 
-//           name, 
-//           comment, 
-//           _createdAt
-//       }
-//   }`
-//   )
-// .then((res) => res?.[0])
-
-// }
+    }`
+  );
+}
 
 
+
+const postFields = `
+  _id,
+  name,
+  title,
+  content,
+  'slug': slug.current,
+  "image": image.asset->url
+`;
+
+export async function fetchSingleBlog(slug) {
+  return client.fetch(
+    groq`*[_type == "posts" && slug.current == $slug] | order(_updatedAt desc) {
+      ${postFields},
+      'comments': *[_type == "comments" && references(^._id)]{
+          _id, 
+          name, 
+          comment, 
+          _createdAt
+      }
+    }`,
+    { slug } // Pass the slug as a parameter
+  );
+}
+
+
+export async function createComment(data) {
+  const mutations = [{
+    createOrReplace: {
+      _type: 'comments',
+      posts: {
+        _type: 'reference',
+        _ref: data._id,
+      },
+      name: data.name,
+      comment: data.comment
+    }
+  }]
+  fetch(`https://${projectId}.api.sanity.io/v${apiVersion}/data/mutate/${dataset}`, {
+    method: 'post',
+    headers: {
+      'Content-type': 'application/json',
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify({ mutations })
+  })
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.error(error))
+}

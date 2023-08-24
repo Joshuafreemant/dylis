@@ -25,17 +25,17 @@ export default function BottomHeader({ menu, setMenu }) {
     return (
 
         <>
-            <div className={menu ? 'bg-white border-b md:hidden border-gray-300 shadow-4xl z-50 fixed top-0 w-full py-2 px-6 flex justify-between items-center' : 'bg-white md:hidden z-50 border-t border-gray-300 shadow-4xl fixed bottom-0 w-full py-2 px-6 flex justify-between items-center'}>
-                
-                {menu === false && <FiMenu onClick={() => setMenu(true)} className='text-gray-500 text-3xl font-extrabold' />}
-                {menu === true && <FiMenu onClick={() => setMenu(false)} className='text-gray-500 text-3xl font-extrabold' />}
+            <div className={menu ? 'bg-white border-b md:hidden border-gray-300 shadow-4xl z-50 fixed top-0 w-full py-2 px-6 flex justify-between items-center text-gray-800' : 'color-custom md:hidden z-50 border-t border-gray-300 shadow-4xl fixed bottom-0 w-full py-2 px-6 flex justify-between items-center'}>
+
+                {menu === false && <FiMenu onClick={() => setMenu(true)} className='text-white text-xl font-extrabold' />}
+                {menu === true && <FiMenu onClick={() => setMenu(false)} className='text-gray-800 text-xl font-extrabold' />}
                 <Link rel="prefetch" href="/home" >
 
-                    <p className={`${dancing_s.className} text-gray-500 text-3xl`}>Dylis Chi</p>
+                    <p className={menu ? `${dancing_s.className} text-gray-800 text-2xl` : `${dancing_s.className} text-white text-2xl`}>Dylis Chi</p>
                 </Link>
 
-                <Link href="/photo" className=' text-3xl'>
-                    <PiSquaresFour className='text-gray-500 text-3xl font-extrabold' />
+                <Link href="/photo" className=''>
+                    <PiSquaresFour className={menu?'text-gray-800 text-xl font-extrabold':'text-white text-xl font-extrabold'} />
                 </Link>
             </div>
 

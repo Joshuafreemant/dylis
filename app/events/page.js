@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import {  fetchEvents } from "@/sanity/lib/client";
+import { fetchEvents } from "@/sanity/lib/client";
 import Link from 'next/link';
 
 export default async function Page() {
 
     const events = await fetchEvents()
-console.log('events',events)
+    console.log('events', events)
 
     return (
         <main className=" mt-0 pt-6 pb-40 px-4 about items-start justify-center flex">
@@ -34,12 +34,12 @@ console.log('events',events)
                                 {event?.description}
                             </label>
 
-<div>
-<Link href={event?.reg_link} className='w-full '>
-                                <button className="rounded-md  w-7/12 bg-[#ffa100] px-4 py-2 mt-4 shadow-md 
-                                text-black font-regular text-md">Register for Event</button></Link>
-</div>
-                           
+                            <div>
+                                <Link href={event?.reg_link} className='w-full '>
+                                    <button className="rounded-sm  w-6/12 md:w-full md:px-4 color-custom py-2 mt-4 shadow-md 
+                                text-white font-regular text-md">Register for Event</button></Link>
+                            </div>
+
                         </div>
 
                     </div>

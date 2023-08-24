@@ -1,7 +1,13 @@
 "use client";
 import React, { Fragment, useEffect, useRef, useState } from "react";
 
+import {  Dancing_Script  } from 'next/font/google'
 
+const dancing_s = Dancing_Script({
+    weight: ["400"],
+
+    subsets: ['latin']
+})
 export default function Page() {
 
 
@@ -9,7 +15,8 @@ export default function Page() {
         <main className=" mt-0  about px-4 flex items-start justify-center">
 
             <div className="pb-32 bg-white opacity-95 py-4 md:w-8/12 lg:w-7/12 md:mb-20">
-                <h1 className="px-6 text-4xl font-bold text-gray-600   mb-0 md:text-center md:py-20 py-12 header">Hey, I'm Dylis</h1>
+                <h1 className={`${dancing_s.className} px-6  text-4xl font-bold text-gray-600 text-center py-8 md:py-16`}>Hey, I'm Dylis</h1>
+
                 <div className="px-6 mt-4 md:px-12">
                     <p className="text-black my-4">
                         Dylis is a dynamic recognised Prophetic Voice to the nations,

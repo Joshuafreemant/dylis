@@ -41,7 +41,7 @@ export default async function Page() {
                         <label className="text-gray-400 text-center text-[14px] font-semibold">By {book?.author}</label>
 
                         <Link href={book?.amazon_link} className='w-7/12'>
-                            <button className="w-full bg-gray-200 px-4 py-2 mt-4 shadow-md text-black font-semibold text-md">BUY ON AMAZON</button></Link>
+                            <button className="w-full color-custom px-4 py-2 mt-4 shadow-md text-white font-semibold text-md">BUY ON AMAZON</button></Link>
                     </div>
                 })
             }

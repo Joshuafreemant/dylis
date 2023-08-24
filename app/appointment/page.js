@@ -2,9 +2,13 @@
 import React, { useState } from "react";
 
 import { useForm } from "react-hook-form";
+import {  Dancing_Script  } from 'next/font/google'
 
+const dancing_s = Dancing_Script({
+    weight: ["400"],
 
-
+    subsets: ['latin']
+})
 export default function Page() {
 
     const {
@@ -26,7 +30,8 @@ export default function Page() {
 
 
             <div className="md:mb-28 w-full md:w-8/12 lg:w-7/12 bg-white opacity-95">
-                <h1 className="text-4xl font-bold text-gray-600 text-center py-12 md:py-20 header">Booking</h1>
+                {/* <h1 className="text-4xl font-bold text-gray-600 text-center py-12 md:py-20 header">Booking</h1> */}
+                <h1 className={`${dancing_s.className}  text-4xl font-bold text-gray-600 text-center py-8 md:py-16`}>Booking</h1>
                 <div className="p-4">
                     <p className="text-black text-center font-regular">
                         For booking, collaborations, and press inquiries please fill out the form below. Team Dylis will return your email within 7-10 business days.
@@ -41,7 +46,7 @@ export default function Page() {
                     className="px-5 flex flex-col items-start mt-8 pb-28">
                     <div className="flex items-center  w-full justify-between px-3 gap-2">
                         <div className="flex flex-col gap-2 w-[180px] md:w-1/2">
-                            <label className="text-gray-600 font-semibold">First Name</label>
+                            <label className="text-gray-600 font-regular text-sm ">First Name</label>
                             <input
                                 {...register("firstname", {
                                     required: true,
@@ -61,7 +66,7 @@ export default function Page() {
                         </div>
 
                         <div className="flex flex-col gap-2 w-[180px] md:w-1/2">
-                            <label className="text-gray-600 font-semibold">Last Name</label>
+                            <label className="text-gray-600 font-regular text-sm">Last Name</label>
                             <input
                                 {...register("lastname", {
                                     required: true,
@@ -85,7 +90,7 @@ export default function Page() {
 
 
                         <div className="flex flex-col gap-2 w-full">
-                            <label className="text-gray-600 font-semibold">Email Address</label>
+                            <label className="text-gray-600 font-regular text-sm">Email Address</label>
                             <input
                                 {...register("email", {
                                     required: true,
@@ -108,7 +113,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex w-full  mt-8 flex-col gap-2 px-3">
-                        <label className="text-gray-600 font-semibold">Purpose</label>
+                        <label className="text-gray-600 font-regular text-sm">Purpose</label>
 
                         <div className="text-gray-500 relative w-full cursor-default rounded-lg bg-white py-[14px] border border-gray-300 px-3 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2  sm:text-sm ">
                             <select className="w-full outline-none"
@@ -135,7 +140,7 @@ export default function Page() {
 
 
                     <div className="flex w-full  mt-8 flex-col gap-2 px-3">
-                        <label className="text-gray-600 font-semibold">Date of Event</label>
+                        <label className="text-gray-600 font-regular text-sm">Date of Event</label>
 
                         <input
                             {...register("date", {
@@ -149,7 +154,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex w-full  mt-8 flex-col gap-2 px-3">
-                        <label className="text-gray-600 font-semibold">Address</label>
+                        <label className="text-gray-600 font-regular text-sm">Address</label>
 
                         <input
                             {...register("address", {
@@ -162,11 +167,13 @@ export default function Page() {
 
 
                     <div className="flex w-full  mt-8 flex-col gap-2 px-3">
-                        <label className="text-gray-600 font-semibold">Organisation</label>
+                        <label className="text-gray-600 font-regular text-sm">Organisation</label>
 
                         <textarea
 
-                            rows={5} className="text-black border border-gray-300 px-2 py-[14px] rounded-lg w-full shadow-md focus:outline-none " {...register("organisation", {
+                            rows={5} 
+                            className="text-black border border-gray-300 px-2 py-[14px] rounded-lg w-full shadow-md focus:outline-none " 
+                            {...register("organisation", {
                                 required: true,
                                 maxLength: 2000,
                             })}
@@ -182,7 +189,7 @@ export default function Page() {
                     </div>
 
 
-                    <button type="submit" className="bg-[#ffa100] text-black mt-8 px-5 rounded-lg ml-3 py-2 text-lg">Submit</button>
+                    <button type="submit" className="color-custom text-white mt-8 px-5 rounded-lg ml-3 py-2 text-lg">Submit</button>
                 </form>
 
             </div>

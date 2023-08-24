@@ -14,14 +14,18 @@ import 'swiper/css/thumbs';
 // import './styles.css';
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+// import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
-import SwiperCore, { EffectCoverflow, Autoplay, Pagination } from "swiper";
+// import SwiperCore, { EffectCoverflow, Autoplay, Pagination } from "swiper";
 
-SwiperCore.use([Autoplay,EffectCoverflow,Pagination]);
+// SwiperCore.use([Autoplay, EffectCoverflow, Pagination]);
+
+import SwiperCore, { EffectCoverflow, Autoplay,Navigation } from "swiper";
+SwiperCore.use([EffectCoverflow, Autoplay]);
+
 // if you want to use array
 const slide_img = [
-    "/dylis4.JPG",
+  "/dylis4.JPG",
   "/dylis1.jpeg",
   "/dylis2.jpeg",
   "/dylis3.jpg",
@@ -33,19 +37,37 @@ const slide_img = [
   // "/dylis10.jpg",
 ];
 export default function Home() {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <main className="gallery bg-image bg-white py-4">
-        <h1 className="text-black text-xl text-center pb-4 ">Photo Gallery</h1>
-        <Swiper
+      <h1 className="text-black text-xl text-center pb-4 ">Photo Gallery</h1>
+      <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
         }}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        // spaceBetween={10}
+        // navigation={true}
+        // thumbs={{ swiper: thumbsSwiper }}
+        // modules={[FreeMode, Navigation, Thumbs]}
+
+        spaceBetween={0} 
+        effect={'slide'} 
+        loop={true} 
+        grabCursor={true} 
+        centeredSlides={true} 
+        slidesPerView={1} coverflowEffect={{
+          "rotate": 0,
+          "stretch": 0,
+          "depth": 100,
+          "modifier": 1,
+          "slideShadows": false
+        }}
+
+        autoplay
+        modules={[Autoplay, Navigation]}
+
+        pagination={{ clickable: true }}
         className="mySwiper2"
       >
         <SwiperSlide>
@@ -83,9 +105,9 @@ export default function Home() {
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={4}
-        freeMode={true}
+        // freeMode={true}
         watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[ Navigation]}
         className="mySwiper thumbs"
       >
         <SwiperSlide>
