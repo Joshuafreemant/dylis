@@ -1,14 +1,25 @@
+"use client";
+
 import Image from 'next/image'
 import { fetchEvents } from "@/sanity/lib/client";
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
-export default async function Page() {
+export default  function Page() {
 
-    const events = await fetchEvents()
-    console.log('events', events)
+    const [events, setEvents] = useState(null);
+ 
+    useEffect(() => {
+        const event = fetchEvents();
+        event.then((response) => {
+
+            setEvents(response);
+
+        });
+    }, []);
 
     return (
-        <main className=" mt-0 pt-6 pb-40 px-4 about items-start justify-center flex">
+        <main className=" mt-0 pt-6 pb-40 px-4 about items-center justify-center flex flex-col">
 
 
             {

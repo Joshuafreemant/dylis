@@ -1,18 +1,27 @@
+"use client";
+
 import { fetchMessages } from "@/sanity/lib/client"
 
 import {  Dancing_Script  } from 'next/font/google'
+import { useEffect, useState } from 'react';
 
 const dancing_s = Dancing_Script({
     weight: ["400"],
 
     subsets: ['latin']
 })
-export default async function Page() {
+export default  function Page() {
 
-    const messages = await fetchMessages()
+    const [messages, setMessages] = useState(null);
+ 
+    useEffect(() => {
+        const message = fetchMessages();
+        message.then((response) => {
 
+            setMessages(response);
 
-
+        });
+    }, []);
     return (
         <main className="about  mt-0   px-4 flex items-start justify-center">
             <div className="w-full md:w-8/12 bg-white opacity-95 pb-40">

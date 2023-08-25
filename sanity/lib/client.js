@@ -27,6 +27,16 @@ export async function fetchBooks() {
   }`
   )
 }
+export async function fetchGifts() {
+  return client.fetch(
+    groq`*[_type=="gifts"]{
+    _id,
+    _createdAt,
+    title,
+    pdfFile
+  }`
+  )
+}
 
 
 export async function fetchCommunities() {
@@ -100,7 +110,9 @@ export async function fetchPosts() {
     groq`*[_type=="posts"]{
       title,
       content,
+      _createdAt,
       author,
+      comments,
       slug,
       "image": image.asset->url
       
@@ -115,6 +127,8 @@ const postFields = `
   name,
   title,
   content,
+  author,
+  
   'slug': slug.current,
   "image": image.asset->url
 `;

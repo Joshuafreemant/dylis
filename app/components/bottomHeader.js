@@ -35,7 +35,7 @@ export default function BottomHeader({ menu, setMenu }) {
                 </Link>
 
                 <Link href="/photo" className=''>
-                    <PiSquaresFour className={menu?'text-gray-800 text-xl font-extrabold':'text-white text-xl font-extrabold'} />
+                    <PiSquaresFour className={menu ? 'text-gray-800 text-xl font-extrabold' : 'text-white text-xl font-extrabold'} />
                 </Link>
             </div>
 
@@ -74,6 +74,16 @@ export default function BottomHeader({ menu, setMenu }) {
                     <Link rel="prefetch" href="/events" >
 
                         <p className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Events</p>
+                    </Link>
+
+                    <Link rel="prefetch" href="/gift" >
+
+                        <p className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Claim Gift</p>
+                    </Link>
+
+                    <Link rel="prefetch" href="/blog" >
+
+                        <p className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Blog</p>
                     </Link>
 
                     <p onClick={() => setPhoto(prev => !prev)} className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Photo Gallery</p>

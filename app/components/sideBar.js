@@ -87,6 +87,9 @@ export default function SideBar({ menu }) {
         <div className='text-white border-b border-gray-400  py-3 px-8 mt-0 '>
           <Link rel="prefetch" href="/photo">Photo Gallery</Link>
         </div>
+        <div className='text-white border-b border-gray-400  py-3 px-8 mt-0 '>
+          <Link rel="prefetch" href="/gift">Claim Free Gift</Link>
+        </div>
         <div className='flex gap-4 items-center text-white py-4 px-8 border-b border-gray-400'>
           {/* <FaSquareFacebook className='text-2xl'/> */}
           <AiFillInstagram className='text-3xl text-white' />

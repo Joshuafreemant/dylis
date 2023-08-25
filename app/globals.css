@@ -61,7 +61,7 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
-  min-height: 50vh;
+  min-height: 100vh;
   background-attachment: fixed;
  
 }
@@ -201,4 +201,16 @@ body {
     /* height: 160%; */
 
   }
+}
+.mailchimp button {
+  clear: left;
+  color: white;
+  background-color: #aa755f ;
+  margin: 2px;
+ padding:10px;
+ border-radius: 5px;
+
+}
+.mailchimp input {
+ padding:10px;
 }

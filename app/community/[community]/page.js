@@ -13,7 +13,7 @@ export default async function Page({ params }) {
     console.log(community, 'new')
 
     return (
-        <main className="bg-white mt-0 pt-6 md:pb-40 pb:32 about px-4">
+        <main className="bg-white mt-0 pt-6 md:pb-40 pb:32 about px-4 flex justify-center items-center">
 
 
             {
@@ -51,7 +51,7 @@ export default async function Page({ params }) {
                     <Link href={community?.community_link} className='w-7/12'>
                         <button className="w-full bg-blue-700 px-4 py-2 mt-4 shadow-md text-white font-semibold text-md">Join Community</button></Link>
 
-                    <Link href={community?.community_link} className='w-7/12'>
+                    <Link href="http://eepurl.com/iyrenY" className='w-7/12'>
                         <button className="w-full bg-gray-400 px-4 py-2 mt-4 shadow-md text-black font-semibold text-md">Join our Mailing List</button></Link>
                 </div>
 

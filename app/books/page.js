@@ -1,13 +1,22 @@
-// "use client";
+"use client";
 import Image from 'next/image'
 import { fetchBooks } from "@/sanity/lib/client";
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
-export default async function Page() {
+export default  function Page() {
 
-    const books = await fetchBooks()
     
+    const [books, setBooks] = useState(null);
+ 
+    useEffect(() => {
+        const book = fetchBooks();
+        book.then((response) => {
 
+            setBooks(response);
+
+        });
+    }, []);
 
 
 
