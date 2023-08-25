@@ -32,8 +32,8 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     return (
 
-        <div className='pb-28'>
-            <form className="mc__form bg-white px-3 py-12 mb-5 border border-gray-100 w-full"
+        <div className=''>
+            <form className=" px-6 pt-12 pb-4 mb-5 border  md:px-20 w-full"
                 onSubmit={(e) => handleSubmit(e)}
             >
                 <h1 className="text-black text-2xl font-semibold mb-4">
@@ -93,17 +93,22 @@ const CustomForm = ({ status, message, onValidated }) => {
                 <input
                     label="subscribe"
                     type="submit"
-                    className='color-custom text-white rounded-md text-center w-full mt-3'
+                    className='color-custom text-white rounded-md py-2 text-center w-full mt-3'
                     formValues={[email, firstName, lastName]}
                 />
             </form>
 
-            {status === "success" && 
-            <div className='w-full text-center color-custom p-2 mt-3 rounded-md'>
-                <a href="/gifts.pdf" className='text-white' download>
-                    Click this button to Claim Your Gift
-                </a>
-                </div>}
+            {status === "success" &&
+                <div className='md:px-20 px-3'>
+
+
+                    <div className='flex gap-3 mt-1 mb-16'>
+                        <Link href="/gifts.pdf" download className='border color-custom text-white  px-6 py-2 rounded-full'>Download Gift</Link>
+                        <Link href="/home" className=' text-gray-800 border border-gray-400 px-6 py-2 rounded-full'>Back to Website</Link>
+                    </div>
+                </div>
+            }
+
         </div>
     );
 };
@@ -133,8 +138,22 @@ export default function Page() {
 
 
     return (
-        <main className='flex flex-col bg-gray-300 items-center justify-center  w-full h-screen p-4 mailchimp'>
-            <div className="w-full md:w-5/12">
+
+
+
+        <main className="flex flex-col md:flex-row-reverse md:h-screen bg-gray-200 items-center">
+
+
+            <div className='md:w-7/12 h-[50vh] md:h-full w-full  flex justify-center items-center flex-col '>
+                {/* <h3 className='text-[#918f6f] shadow-inner text-2xl font-bold text-center'>AVAILABLE AUGUST 30TH</h3> */}
+
+                <img src='/giftBook.jpg' className='w-full h-full object-cover' />
+
+
+            </div>
+
+
+            <div className="w-full md:w-5/12 ">
                 <MailchimpSubscribe url={postUrl}
                     render={({ subscribe, status, message }) => (
                         <CustomForm
@@ -144,11 +163,9 @@ export default function Page() {
                         />
                     )}
                 />
+
+
             </div>
-
-
-
-
 
         </main>
 
