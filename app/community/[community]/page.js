@@ -17,7 +17,7 @@ export default async function Page({ params }) {
 
 
             {
-                <div className="bg-white opacity-95 px-6 md:px-8 my-4 py-20 mb-20  md:w-8/12 ">
+                <div className="bg-white opacity-95 px-6 md:px-8 my-4 md:py-20 pt-8 pb-16 mb-20 w-full  md:w-8/12 ">
                     <div className="overflow-hidden">
                         <h1 className="text-3xl font-bold text-gray-600 text-left pt-4">{community?.title}</h1>
                         <p className="text-gray-500 text-left my-6 whitespace-normal">

@@ -69,7 +69,7 @@ export default function SideBar({ menu }) {
         <div className='text-white border-b border-gray-400  pt-3  mt-0 '>
 
           <div className='flex items-center justify-between px-8'>
-            <Link rel="prefetch" href="/books">Community</Link>
+            <Link rel="prefetch" href="#">Community</Link>
             <BsChevronDown />
           </div>
 
