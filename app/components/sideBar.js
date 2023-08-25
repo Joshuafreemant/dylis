@@ -30,11 +30,13 @@ export default function SideBar({ menu }) {
 
 
   return (
+
+    <div className="relative">
     <div className={menu === true ? 'color-custom sidebar-show' : 'sidebar-hide bg-gray-50'}>
 
-      <nav className='flex flex-col mt-16'>
-        <div className='text-white border-b border-gray-400  py-3 px-8 '>
-          <Link rel="prefetch" href="/about">About Dylis</Link>
+      <nav className='flex flex-col mt-12'>
+        <div className='text-white border-b mt-1 border-gray-400  py-3 px-8 '>
+          <Link rel="prefetch" href="/about text-xs">About Dylis</Link>
         </div>
         <div className='text-white border-b border-gray-400  py-3 px-8 mt-0 '>
           <Link rel="prefetch" href="/appointment">Book an Appointment</Link>
@@ -90,7 +92,7 @@ export default function SideBar({ menu }) {
         <div className='text-white border-b border-gray-400  py-3 px-8 mt-0 '>
           <Link rel="prefetch" href="/gift">Claim Free Gift</Link>
         </div>
-        <div className='flex gap-4 items-center text-white py-4 px-8 border-b border-gray-400'>
+        <div className='flex gap-4 items-center text-white py-2 px-8 border-b border-gray-400'>
           {/* <FaSquareFacebook className='text-2xl'/> */}
           <AiFillInstagram className='text-3xl text-white' />
           <Link rel="prefetch" href={'https://web.facebook.com/eaglesariseglobal'}>
@@ -104,6 +106,6 @@ export default function SideBar({ menu }) {
 
 
     </div>
-
+    </div>
   )
 }
