@@ -34,22 +34,22 @@ const CustomForm = ({ status, message, onValidated }) => {
 
         <div className='md:px-20 px-6'>
 
-            <p className=' text-black text-left font-medium text-sm'>
+            <p className=' text-white text-left font-medium text-md'>
                 Thank you for purchasing my book, 'The Prophetic Blueprint.' As a token of my appreciation, I've prepared a special journal just for you. This powerful journal and devotional have been crafted to complement your transformative journey through 'The Prophetic Blueprint.'
             </p>
 
-            <p className='my-4  text-black text-left font-medium text-sm'>
+            <p className='my-4  text-white text-left font-medium text-md'>
 
-                Simply provide your name and email below, and we'll send this valuable resource straight to your inbox.
+                Simply provide your name and email below, and you will have access to download your personal copy of this journal by clicking the download link when you submit
 
             </p>
-            <p className=' text-black text-left font-medium text-sm'>
+            <p className=' text-white text-left font-medium text-md'>
 
                 Enjoy your reading and reflection!
 
 
             </p>
-            <form className="  pt-6 pb-4 mb-5 border   w-full"
+            <form className="  pt-6 pb-4 mb-5    w-full"
                 onSubmit={(e) => handleSubmit(e)}
             >
 
@@ -80,7 +80,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                         type="text"
                         value={firstName}
                         placeholder="First Name"
-                        className='p-2 rounded-md border border-gray-300 w-full text-gray-700'
+                        className='p-3 rounded-md border border-gray-300 w-full text-gray-700'
 
                     />
 
@@ -90,7 +90,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                         type="text"
                         value={lastName}
                         placeholder="Last Name"
-                        className='p-2 rounded-md border border-gray-300 w-full text-gray-700'
+                        className='p-3 rounded-md border border-gray-300 w-full text-gray-700'
 
                     />
 
@@ -100,7 +100,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                         type="email"
                         value={email}
                         placeholder="Email Address"
-                        className='p-2 rounded-md border border-gray-300 w-full text-gray-700'
+                        className='p-3 rounded-md border border-gray-300 w-full text-gray-700'
 
                     />
 
@@ -109,7 +109,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 <input
                     label="subscribe"
                     type="submit"
-                    className='color-custom text-white rounded-md py-2 text-center w-full mt-3'
+                    className='bg-black text-white rounded-md py-3 text-center w-full mt-3'
                     formValues={[email, firstName, lastName]}
                 />
             </form>
@@ -119,8 +119,8 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 
                 <div className='flex gap-3 mt-1 mb-16'>
-                    <Link href="/gifts.pdf" download className='border color-custom text-white  px-6 py-2 rounded-full'>Download Gift</Link>
-                    <Link href="/home" className=' text-gray-800 border border-gray-400 px-6 py-2 rounded-full'>Back to Website</Link>
+                    <Link href="/gift.pdf" download className='border color-custom text-white  px-6 py-2 rounded-full'>Download Gift</Link>
+                    <Link href="/home" className=' text-white border border-white hover:bg-black hover:text-white px-6 py-2 rounded-full'>Back to Website</Link>
                 </div>
             </div>
            }
@@ -157,7 +157,7 @@ export default function Page() {
 
 
 
-        <main className="flex flex-col md:flex-row-reverse md:h-screen bg-gray-200 items-center gap-6 md:gap-0">
+        <main className="flex flex-col md:flex-row-reverse md:h-screen color-custom items-center gap-6 md:gap-0">
 
 
             <div className='md:w-7/12 h-[50vh] md:h-full w-full  flex justify-center items-center flex-col '>
