@@ -50,7 +50,7 @@ export default function SideBar({ menu }) {
               <BsChevronDown onClick={() => setMore(prev => !prev)} />
             </div>
 
-            <div className={more ? 'mt-12 text-sm mb-0 open' : 'mt-4 text-sm mb-0 close'}>
+            <div className={more ? 'mt-12 text-xs mb-0 open' : 'mt-4 text-xs mb-0 close'}>
               {/* {titles?.title} */}
               {books?.map((book, i) => {
                 return <p key={i} className='border-gray-400 border-t  mb-0 pl-12 py-3'>
@@ -77,7 +77,7 @@ export default function SideBar({ menu }) {
               <BsChevronDown onClick={() => setMoreCommunity(prev => !prev)} />
             </div>
 
-            <div className={moreCommunity ? 'mt-12 text-sm mb-0 open' : 'mt-4 text-sm mb-0 close'}>
+            <div className={moreCommunity ? 'mt-12 text-xs mb-0 open' : 'mt-4 text-xs mb-0 close'}>
               {/* {titles?.title} */}
               {communities?.map((community, i) => {
                 return <p key={i} className='border-gray-400 border-t  mb-0 pl-12 py-3'>
