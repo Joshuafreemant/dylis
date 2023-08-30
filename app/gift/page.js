@@ -32,12 +32,28 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     return (
 
-        <div className=''>
-            <form className=" px-6 pt-12 pb-4 mb-5 border  md:px-20 w-full"
+        <div className='md:px-20 px-6'>
+
+            <p className=' text-black text-left font-medium text-sm'>
+                Thank you for purchasing my book, 'The Prophetic Blueprint.' As a token of my appreciation, I've prepared a special journal just for you. This powerful journal and devotional have been crafted to complement your transformative journey through 'The Prophetic Blueprint.'
+            </p>
+
+            <p className='my-4  text-black text-left font-medium text-sm'>
+
+                Simply provide your name and email below, and we'll send this valuable resource straight to your inbox.
+
+            </p>
+            <p className=' text-black text-left font-medium text-sm'>
+
+                Enjoy your reading and reflection!
+
+
+            </p>
+            <form className="  pt-6 pb-4 mb-5 border   w-full"
                 onSubmit={(e) => handleSubmit(e)}
             >
-                <h1 className="text-black text-2xl font-semibold mb-4">
-                    Subscribe to Claim</h1>
+
+
 
                 {status === "sending" && (
                     <div className="text-purple-500">
@@ -99,15 +115,15 @@ const CustomForm = ({ status, message, onValidated }) => {
             </form>
 
             {status === "success" &&
-                <div className='md:px-20 px-3'>
+            <div className=''>
 
 
-                    <div className='flex gap-3 mt-1 mb-16'>
-                        <Link href="/gifts.pdf" download className='border color-custom text-white  px-6 py-2 rounded-full'>Download Gift</Link>
-                        <Link href="/home" className=' text-gray-800 border border-gray-400 px-6 py-2 rounded-full'>Back to Website</Link>
-                    </div>
+                <div className='flex gap-3 mt-1 mb-16'>
+                    <Link href="/gifts.pdf" download className='border color-custom text-white  px-6 py-2 rounded-full'>Download Gift</Link>
+                    <Link href="/home" className=' text-gray-800 border border-gray-400 px-6 py-2 rounded-full'>Back to Website</Link>
                 </div>
-            }
+            </div>
+           }
 
         </div>
     );
@@ -141,7 +157,7 @@ export default function Page() {
 
 
 
-        <main className="flex flex-col md:flex-row-reverse md:h-screen bg-gray-200 items-center">
+        <main className="flex flex-col md:flex-row-reverse md:h-screen bg-gray-200 items-center gap-6 md:gap-0">
 
 
             <div className='md:w-7/12 h-[50vh] md:h-full w-full  flex justify-center items-center flex-col '>

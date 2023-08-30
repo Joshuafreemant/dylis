@@ -31,8 +31,10 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-.color-custom{
-  background-image: linear-gradient(91deg,#aa755f 29%,#aa755f 38%,#aa755f 53%,rgba(197,172,96,1) 100%)!important;
+.color-custom {
+  /* background-image: linear-gradient(91deg,#aa755f 29%,#aa755f 38%,#aa755f 53%,rgba(197,172,96,1) 100%); */
+  background-image: linear-gradient(30deg, #1593A7 29%, rgb(5, 65, 121) 100%);
+
 }
 
 .bebas {
@@ -51,19 +53,20 @@ body {
 
 
 .bg-image {
- 
+
   height: 100vh;
 }
-.about{
- 
+
+.about {
+
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)) ,url('../public/dylis2.jpeg') center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../public/dylis2.jpeg') center center;
   background-size: cover;
   background-position: center;
   color: white;
   min-height: 100vh;
   background-attachment: fixed;
- 
+
 }
 
 /* .header {
@@ -72,6 +75,23 @@ body {
 
 .logo {
   font-family: 'Dancing Script', cursive !important;
+}
+
+.close {
+  top: -200;
+  position: absolute;
+  transform: translateY(80px);
+  transition: transform 0.2s ease-out;
+
+}
+
+.open {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  transition: transform 0.2s ease-in;
+  transform: translateY(0px);
+
 }
 
 .sidebar-hide {
@@ -85,6 +105,7 @@ body {
   width: 100%;
   transition: transform 0.3s ease-in-out;
 }
+
 
 .sidebar-show {
   left: 0;
@@ -203,15 +224,17 @@ body {
 
   }
 }
+
 .mailchimp button {
   clear: left;
   color: white;
-  background-color: #aa755f ;
+  background-color: #aa755f;
   margin: 2px;
- padding:10px;
- border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px;
 
 }
+
 .mailchimp input {
- padding:10px;
+  padding: 10px;
 }

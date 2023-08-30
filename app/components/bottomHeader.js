@@ -76,10 +76,10 @@ export default function BottomHeader({ menu, setMenu }) {
                         <p className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Events</p>
                     </Link>
 
-                    <Link rel="prefetch" href="/gift" >
+                    {/* <Link rel="prefetch" href="/gift" >
 
                         <p className={`${bebas_n.className} text-gray-800 text-xl font-bold tracking-wider`}>Claim Gift</p>
-                    </Link>
+                    </Link> */}
 
                     <Link rel="prefetch" href="/blog" >
 
