@@ -38,7 +38,7 @@ export default function SideBar({ menu }) {
 
         <nav className='flex flex-col mt-12'>
           <div className='text-white border-b mt-1 border-gray-400  py-3 px-8 '>
-            <Link rel="prefetch" href="/about text-xs">About Dylis</Link>
+            <Link rel="prefetch" href="/about">About Dylis</Link>
           </div>
           <div className='text-white border-b border-gray-400  py-3 px-8 mt-0 '>
             <Link rel="prefetch" href="/appointment">Book an Appointment</Link>
