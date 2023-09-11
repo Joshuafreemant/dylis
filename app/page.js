@@ -27,7 +27,7 @@ export default function Home() {
        
         </p>
         <div className='flex gap-3 mt-2 mb-16'>
-          <Link href="#" className='bg-black text-white px-6 py-2 rounded-full'>Get Your Today</Link>
+          <Link href="#" className='bg-black text-white px-6 py-2 rounded-full'>Get Yours Today</Link>
           <Link href="/home" className='bg-black text-white px-6 py-2 rounded-full'>Go to Website</Link>
         </div>
       </div>
