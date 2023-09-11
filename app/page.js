@@ -23,7 +23,12 @@ export default function Home() {
         <h4 className='text-white my-6 font-semibold'>#THEPROPPHETICBLUEPRINT</h4>
         <h1 className='text-6xl text-center text-white font-bold'>PREORDER NOW</h1>
         <p className='my-4 font-normal text-white text-center'>
-          Inspiring you towards the pursuit of hope with a lens of compassion, Sarah serves as a guide who exposes the hidden hope that awaits you each day. Sarah is not shaking up your life with renewed expectation and the epic pursuit of hope for you to go back to your norm. She wants you to get out of your comfort zone and into your go zone—the space where the abnormal eventually becomes comfortable because you refused to give up!
+        Are you grappling with doubts about your prophetic calling? Are you 
+exhausted being a passive bystander to your own potential? Tired of playing 
+small? Are you ready to step into the greatness that’s within your reach? Do 
+you feel an intense desire to make an undeniable impact and touch lives?
+Dylis takes you on an inspiring journey, guiding you through a transformative 
+process that leads to profound impact and purposeful living.
        
         </p>
         <div className='flex gap-3 mt-2 mb-16'>
