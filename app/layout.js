@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {children}
         <SideBar menu={menu} />
         {/* {(pathname !=='/studio') && <BottomHeader menu={menu} setMenu={setMenu} />} */}
-        {(pathname === '/' || pathname === '/studio' || pathname === '/gift') ? '' : <BottomHeader menu={menu} setMenu={setMenu} />}
+        {(pathname === '/' || pathname.includes('studio') || pathname.includes('gift')) ? '' : <BottomHeader menu={menu} setMenu={setMenu} />}
       </body>
 
     </html>
