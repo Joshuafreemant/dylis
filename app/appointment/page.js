@@ -34,7 +34,8 @@ export default function Page() {
                 <h1 className={`${dancing_s.className}  text-4xl font-bold text-gray-600 text-center py-8 md:py-16`}>Booking</h1>
                 <div className="p-4">
                     <p className="text-black text-center font-regular">
-                        For booking, collaborations, and press inquiries please fill out the form below. Team Dylis will return your email within 7-10 business days.
+                        For booking, collaborations, please fill out the form below. 
+                        Team Dylis will return your email within 2-4 business days.
                     </p>
                 </div>
 
