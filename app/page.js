@@ -32,7 +32,7 @@ process that leads to profound impact and purposeful living.
        
         </p>
         <div className='flex gap-3 mt-2 mb-16'>
-          <Link href="#" className='bg-black text-white px-6 py-2 rounded-full'>Get Yours Today</Link>
+          <Link href="https://www.amazon.co.uk/Prophetic-Blueprint-Unlock-Activate-Unstoppable/dp/1982287551/ref=sr_1_1?crid=3MSM2K1AZ0D75&keywords=the+prophetic+blueprint&qid=1695631523&sprefix=the+prophetic+blueprint%2Caps%2C58&sr=8-1" className='bg-black text-white px-6 py-2 rounded-full'>Get Yours Today</Link>
           <Link href="/home" className='bg-black text-white px-6 py-2 rounded-full'>Go to Website</Link>
         </div>
       </div>
