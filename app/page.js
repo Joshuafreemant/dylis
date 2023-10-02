@@ -21,7 +21,7 @@ export default function Home() {
 
       <div className='md:w-5/12 md:flex-1 md:p-12 md:h-full mt-0   w-full p-3 flex justify-center items-center flex-col'>
         <h4 className='text-white my-6 font-semibold'>#THEPROPPHETICBLUEPRINT</h4>
-        <h1 className='text-6xl text-center text-white font-bold'>PREORDER NOW</h1>
+        <h1 className='text-6xl text-center text-white font-bold'>ORDER NOW</h1>
         <p className='my-4 font-normal text-white text-center'>
         Are you grappling with doubts about your prophetic calling? Are you 
 exhausted being a passive bystander to your own potential? Tired of playing 
