@@ -11,14 +11,23 @@ export default function Home() {
     <main className=" h-full w-full bg-white">
       <div className="bg-image hidden md:flex items-center">
         <div className="px-20">
-          <h1 data-aos="fade-down" className="px-6 text-white font-semibold heading-landing text-left text-[120px]">
+          <h1
+            data-aos="fade-down"
+            className="px-6 text-white font-semibold heading-landing text-left text-[120px]"
+          >
             Empowered
           </h1>
-          <p  data-aos="fade-down" className=" text-white font-bold p-3 mt-2 text-6xl heading-top pr-[200px]">
+          <p
+            data-aos="fade-down"
+            className=" text-white font-bold p-3 mt-2 text-6xl heading-top pr-[200px]"
+          >
             The Extraordinary Growth and Expansion Coaching Program
           </p>
-          <button data-aos="fade-down" className="px-12 bg-pink-800 text-white text-xl outline-none rounded-3xl py-3 ml-3 mt-4">
-            <Link rel="prefetch" href="/appointment">
+          <button
+            data-aos="fade-down"
+            className="px-12 bg-pink-800 text-white text-xl outline-none rounded-3xl py-3 ml-3 mt-4"
+          >
+            <Link rel="prefetch" href="/join">
               BE EMPOWERED !!!
             </Link>
           </button>
@@ -33,16 +42,13 @@ export default function Home() {
         <p className="bg-pink-800 text-white p-3 text-center mt-6 text-xl heading-top">
           The Extraordinary Growth and Expansion Coaching Program
         </p>
-        <img
-          src="/dylis.jpeg"
-          className=" w-full h-full object-cover"
-        />
+        <img src="/dylis.jpeg" className=" w-full h-full object-cover" />
       </div>
       <div className="px-10 text-black text-left md:text-center mt-5 font-medium md:px-[350px] md:mt-20 md:mb-20">
         <p className="text-xl leading-8">
-          A transformative journey and experience where you break through
-          self-doubt, overcome stagnation, heal past wounds, and release
-          unresolved emotional burdens.
+          Join me on this transformative journey and experience where I help you
+          break through self-doubt, overcome stagnation, heal past wounds, and
+          release unresolved emotional burdens.
         </p>
         <p className="mt-5 text-xl leading-8">
           Together, we'll unravel limiting patterns and beliefs, turning fears
@@ -110,12 +116,20 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-12  px-12  md:px-40 md:mt-20">
-        <h2 className="text-pink-800 text-2xl md:text-4xl uppercase mb-4 font-semibold text-center heading-top">
+      <div className="mt-12  px-12  md:px-20 md:mt-20">
+        <div className="text-center">
+          <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
+            <Link rel="prefetch" href="/join">
+              Join Now!
+            </Link>
+          </button>
+        </div>
+
+        <h2 className="md:mt-20 text-pink-800   mb-4 font-bold text-center moon-dance text-3xl md:text-4xl">
           What we offer
         </h2>
 
-        <div className="md:grid-cols-2 grid lg:grid-cols-3 gap-4">
+        <div className="md:grid-cols-2 grid lg:grid-cols-4 gap-4">
           <div className="bg-[#EDE8E2] shadow-md p-4 md:p-6 ">
             <div className="flex items-center gap-4">
               <img
@@ -165,11 +179,34 @@ export default function Home() {
               connection. It's about rewriting your life's narrative!
             </p>
           </div>
+          <div className="bg-[#EDE8E2] shadow-md p-6 mt-5 md:mt-0  ">
+            <div className="flex items-center gap-4">
+              <img
+                className="h-3 w-3"
+                src="https://www.lenkalutonska.com/wp-content/uploads/2021/06/dot.png"
+              />
+              <h1 className="text-black text-md font-semibold">
+                Transformational Journey
+              </h1>
+            </div>
+            <p className="text-black text-md leading-7 pl-7 mt-3">
+              Live the life of your dreams: manifesting your deepest aspirations
+              and desires. Embracing every moment with purpose, crafting a
+              reality where passion, fulfilment, and joy intersect harmoniously.
+            </p>
+          </div>
         </div>
       </div>
 
+      <div className="text-center md:mt-20">
+          <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
+            <Link rel="prefetch" href="/join">
+              Join Now!
+            </Link>
+          </button>
+        </div>
       <div className="mt-12 px-8 md:px-[350px] md:mt-20">
-        <h1 className="heading-top text-2xl md:text-3xl  text-center text-pink-800 uppercase">
+        <h1 className="moon-dance text-3xl md:text-4xl  text-center text-pink-800  font-bold">
           Why this Coaching program ?
         </h1>
         <p className="text-black text-center mt-4 text-md">
@@ -198,7 +235,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#EDE8E2] py-12 px-8 md:px-[300px]">
-        <h1 className=" uppercase heading-top text-pink-800 text-2xl md:text-3xl text-center px-4">
+        <h1 className="moon-dance font-bold  text-pink-800 text-3xl md:text-4xl text-center px-4">
           My transformative coaching steps:
         </h1>
         <div className="flex flex-col items-start justify-start">
@@ -214,7 +251,7 @@ export default function Home() {
             <FaClipboardCheck className="text-pink-800 text-3xl" />
             <p className="text-black text-xl">
               Reclaiming Your true identity: Reclaim your power, step into new
-              version of yourself, Take control, honour your needs, find
+              version of yourself, Take control, honour your needs, activate
               support.
             </p>
           </div>
@@ -230,7 +267,7 @@ export default function Home() {
             <FaClipboardCheck className="text-pink-800 text-3xl" />
             <p className="text-black text-xl">
               Relationships and Growth: Evolve connections, deepen desires, set
-              intentions.
+              big bold intentions.
             </p>
           </div>
 
@@ -250,7 +287,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#EDE8E2] py-12 px-8 md:px-[250px] md:py-24">
-        <h1 className=" uppercase heading-top px-10 text-pink-800 text-3xl font-medium text-center ">
+        <h1 className="moon-dance px-10 text-pink-800 md:text-4xl text-3xl font-bold text-center ">
           Explore the Best Fit for You
         </h1>
         <p className="text-center text-black mt-4 text-md">
@@ -280,7 +317,7 @@ export default function Home() {
             </p>
 
             <button className="bg-pink-800 text-white outline-none rounded-3xl px-4 py-2 mt-4">
-              <Link rel="prefetch" href="/appointment">
+              <Link rel="prefetch" href="/join">
                 Join Course
               </Link>
             </button>
@@ -301,7 +338,7 @@ export default function Home() {
             </p>
 
             <button className="bg-pink-800 text-white outline-none rounded-3xl px-4 py-2 mt-4">
-              <Link rel="prefetch" href="/appointment">
+              <Link rel="prefetch" href="/join">
                 Join Course
               </Link>
             </button>
@@ -327,7 +364,15 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="text-center text-pink-800 heading-top bg-[#EDE8E2] md:pt-20 md:text-5xl  text-3xl font-bold">
+      <div className="text-center  bg-[#ede8e2]">
+          <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
+            <Link rel="prefetch" href="/join">
+              Join Now!
+            </Link>
+          </button>
+        </div>
+
+      <h1 className="text-center text-pink-800 moon-dance bg-[#EDE8E2] md:pt-20 pt-12 md:text-5xl  text-3xl font-bold">
         Testimonials
       </h1>
       <div className="p-8 bg-[#EDE8E2] -mt-2  md:grid grid-cols-3 md:px-32 gap-6">

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Saira+Semi+Condensed:wght@300;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -87,6 +88,9 @@ body {
 .custom-font {
   font-family: "Playfair Display", serif;
 }
+.moon-dance{
+  font-family: 'Moon Dance', cursive;
+}
 
 .close {
   top: -200;
@@ -105,7 +109,7 @@ body {
  
 }
 .bg-image-two {
-  background: linear-gradient(rgba(168, 112, 8, 0.9), rgba(155, 103, 6, 0.85)),
+  background: linear-gradient(rgba(117, 3, 93, 0.9), rgba(117, 3, 93, 0.9)),
     url('/empowered.jpg') center right;
   background-size: cover;
 
