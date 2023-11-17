@@ -29,7 +29,7 @@ export default function Page() {
       <div className="md:mb-28 w-full md:w-8/12 lg:w-7/12 bg-white opacity-95">
         {/* <h1 className="text-4xl font-bold text-gray-600 text-center py-12 md:py-20 header">Booking</h1> */}
         <h1
-          className={`moon-dance  text-4xl font-semibold text-gray-600 text-center py-6 md:py-12`}
+          className={`moon-dance  text-4xl font-semibold text-pink-800 text-center py-6 md:py-12`}
         >
           Empowers coaching program
         </h1>
@@ -50,7 +50,7 @@ export default function Page() {
           <div className="flex items-center  w-full justify-between px-3 gap-2">
             <div className="flex flex-col gap-2 w-full">
               <label className="text-gray-600 font-regular text-sm ">
-                Name
+                Name <span className="text-red-500">*</span>
               </label>
               <input
                 {...register("name", {
@@ -72,7 +72,7 @@ export default function Page() {
           <div className="flex w-full  mt-8 px-3">
             <div className="flex flex-col gap-2 w-full">
               <label className="text-gray-600 font-regular text-sm">
-                Email Address
+                Email Address <span className="text-red-500">*</span>
               </label>
               <input
                 {...register("email", {
@@ -96,7 +96,7 @@ export default function Page() {
 
           <div className="flex w-full  mt-8 flex-col gap-2 px-3">
             <label className="text-gray-600 font-regular text-sm">
-              Background and goals
+              Background and goals <span className="text-red-500">*</span>
             </label>
 
             <textarea
@@ -119,7 +119,7 @@ export default function Page() {
 
           <div className="flex w-full  mt-8 flex-col gap-2 px-3">
             <label className="text-gray-600 font-regular text-sm">
-              Expectations and challenges
+              Expectations and challenges <span className="text-red-500">*</span>
             </label>
 
             <textarea
@@ -142,27 +142,54 @@ export default function Page() {
 
           <div className="flex w-full  mt-8 flex-col gap-2 px-3">
             <label className="text-gray-600 font-regular text-sm">
-              Availability and commitment:
+              Availability and commitment: <span className="text-red-500">*</span>
+            </label>
+
+            <textarea
+              rows={3}
+              className="text-black border border-gray-300 px-2 py-[14px] rounded-lg w-full shadow-md focus:outline-none "
+              {...register("availability_and_commitment", {
+                required: true,
+                maxLength: 2000,
+              })}
+            />
+            {errors.availability_and_commitment && (
+              <p className="text-red-500 mt-1">
+                {errors.availability_and_commitment.type === "required" &&
+                  "This field is required."}
+                {errors.availability_and_commitment.type === "maxLength" &&
+                  "Max length is 2000 char."}
+              </p>
+            )}
+
+           
+          </div>
+
+          <div className="flex w-full  mt-8 flex-col gap-2 px-3">
+            <label className="text-gray-600 font-regular text-sm">
+              Packages/Pathways: <span className="text-red-500">*</span>
             </label>
 
             <div className="text-gray-500 relative w-full cursor-default rounded-lg bg-white py-[14px] border border-gray-300 px-3 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2  sm:text-sm ">
               <select
                 className="w-full outline-none"
-                {...register("Availability_and_commitment", {
+                {...register("Package", {
                   required: true,
                 })}
               >
                 <option value="6 months of 121 coaching ( £6000 )">
                   6 months of 121 coaching ( £6000 )
                 </option>
-                <option value="6 months group coaching ( £3000)">6 months group coaching ( £3000)</option>
+                <option value="6 months group coaching ( £3000)">
+                  6 months group coaching ( £3000)
+                </option>
                 <option value="Both ( £7000)">Both ( £7000)</option>
               </select>
             </div>
 
-            {errors.availability_and_commitment && (
+            {errors.Package && (
               <p className="text-red-500 mt-1 text-xs">
-                {errors.availability_and_commitment.type === "required" &&
+                {errors.Package.type === "required" &&
                   "This field is required."}
               </p>
             )}

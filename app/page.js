@@ -186,25 +186,25 @@ export default function Home() {
                 src="https://www.lenkalutonska.com/wp-content/uploads/2021/06/dot.png"
               />
               <h1 className="text-black text-md font-semibold">
-                Transformational Journey
+                Live the life of your dreams
               </h1>
             </div>
             <p className="text-black text-md leading-7 pl-7 mt-3">
-              Live the life of your dreams: manifesting your deepest aspirations
-              and desires. Embracing every moment with purpose, crafting a
-              reality where passion, fulfilment, and joy intersect harmoniously.
+              Manifesting your deepest aspirations and desires. Embracing every
+              moment with purpose, crafting a reality where passion, fulfilment,
+              and joy intersect harmoniously.
             </p>
           </div>
         </div>
       </div>
 
       <div className="text-center md:mt-20 mt-12">
-          <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
-            <Link rel="prefetch" href="/join">
-              Join Now!
-            </Link>
-          </button>
-        </div>
+        <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
+          <Link rel="prefetch" href="/join">
+            Join Now!
+          </Link>
+        </button>
+      </div>
       <div className="mt-12 px-8 md:px-[350px] md:mt-20">
         <h1 className="moon-dance text-3xl md:text-4xl  text-center text-pink-800  font-bold">
           Why this Coaching program ?
@@ -318,7 +318,7 @@ export default function Home() {
 
             <button className="bg-pink-800 text-white outline-none rounded-3xl px-4 py-2 mt-4">
               <Link rel="prefetch" href="/join">
-                Join Course
+                Join Now
               </Link>
             </button>
           </div>
@@ -339,7 +339,7 @@ export default function Home() {
 
             <button className="bg-pink-800 text-white outline-none rounded-3xl px-4 py-2 mt-4">
               <Link rel="prefetch" href="/join">
-                Join Course
+                Join Now
               </Link>
             </button>
           </div>
@@ -365,12 +365,12 @@ export default function Home() {
       </div>
 
       <div className="text-center  bg-[#ede8e2]">
-          <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
-            <Link rel="prefetch" href="/join">
-              Join Now!
-            </Link>
-          </button>
-        </div>
+        <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
+          <Link rel="prefetch" href="/join">
+            Join Now!
+          </Link>
+        </button>
+      </div>
 
       <h1 className="text-center text-pink-800 moon-dance bg-[#EDE8E2] md:pt-20 pt-12 md:text-5xl  text-3xl font-bold">
         Testimonials
@@ -379,15 +379,15 @@ export default function Home() {
         <div className="bg-white p-5 mt-6">
           <p className="text-pink-800 text-6xl mb-0 custom-font">&quot;</p>
           <p className="text-black mt-0">
-            I have been a Christian for 20 years. I have been to every
+            &quot;I have been a Christian for 20 years. I have been to every
             deliverance meeting, every prayer line. For the past 8 years I have
             periodically had 5 different counsellors, signed off from work with
-            PTSD. But it was doing the mentorship that gave me the biggest
-            Breakthrough of my life. Because of the love and support from
-            Apostle Dylis and community I was able to face extreme occult
-            darkness in my past. I am thriving in this New life that is my new
-            identity/reality and wait with anticipation for the next mentorship.
-            Thank you Apostle Dylis !
+            PTSD. But it was the coaching I received from Dylis that gave me the
+            biggest Breakthrough of my life. Because of the love and support
+            from Dylis and the community I was able to face extreme occult
+            darkness in my past. I am thriving in this new life that is my new
+            identity/reality and wait with anticipation for my next coaching
+            session.Thank you Dylis !
           </p>
           <div className=" flex items-center justify-between mt-4">
             <div className="text-yellow-500 flex items-center ">
@@ -408,9 +408,9 @@ export default function Home() {
             Father. My household was ruled by fear, I knew nothing but fear. But
             now I can&#39;t even remember what was done to me and fear has left
             me. I have to ask God did that really happen to me. I want to thank
-            Apostle for her teachings on the mentorship, because it goes to
-            those real deep places in me and heals and transforms me. Now I am
-            in deep union and relationship with Papa God
+            Dylis for her coaching, because it goes to those real deep places in
+            me and heals and transforms me. Now I am in deep union and
+            relationship with Papa God
           </p>
           <div className=" flex items-center justify-between mt-4">
             <div className="text-yellow-500 flex items-center ">
@@ -430,9 +430,9 @@ export default function Home() {
             When I think about it, three years ago I didn&#39;t have this level
             of confidence. But now I have come to that place of knowing who I
             am, a child of God and my worth. To have this kind of hope for
-            myself and my family. I am grateful for Apostle Dylis and her
-            dedication to training us. I am grateful for this community because
-            we don&#39;t just gather, our lives are literally transformed
+            myself and my family. I am grateful for Dylis and her dedication to
+            coaching us. I am grateful for this community because we don&#39;t
+            just gather, our lives are literally transformed
           </p>
           <div className=" flex items-center justify-between mt-4">
             <div className="text-yellow-500 flex items-center ">
@@ -450,9 +450,9 @@ export default function Home() {
           <p className="text-pink-800 text-6xl mb-0 custom-font">&quot;</p>
           <p className="text-black mt-0">
             I love this community. I feel so loved, heard and seen. This
-            mentorship has changed me so much, people do not recognise me. I am
-            so grateful to you Apostle Dylis. I knew she had something for me,
-            my next level and I got it!
+            coaching has changed me so much, people do not recognise me. I am so
+            grateful to you Dylis. I knew she had something for me, my next
+            level and I got it!
           </p>
           <div className=" flex items-center justify-between mt-4">
             <div className="text-yellow-500 flex items-center ">
@@ -470,10 +470,10 @@ export default function Home() {
           <p className="text-pink-800 text-6xl mb-0 custom-font">&quot;</p>
           <p className="text-black mt-0">
             There was a lot of warfare around me. There had to be a breakdown to
-            get the breakthrough.I am more grounded and focused, I have more
-            peace, joy, faith and confidence. Thiswhere I have wanted to be for
+            get the breakthrough. I am more grounded and focused, I have more
+            peace, joy, faith and confidence. This where I have wanted to be for
             so long and I have finally arrived. I am crying with tears of joy. I
-            thank Apostle Dylis
+            thank Dylis
           </p>
           <div className=" flex items-center justify-between mt-4">
             <div className="text-yellow-500 flex items-center ">
@@ -490,8 +490,8 @@ export default function Home() {
         <div className="bg-white p-5 mt-6">
           <p className="text-pink-800 text-6xl mb-0 custom-font">&quot;</p>
           <p className="text-black mt-0">
-            I could feel the love coming from Apostle Dylis. Even though I never
-            met her physically, I experienced the love and acceptance it was so
+            I could feel the love coming from Dylis. Even though I never met her
+            physically, I experienced the love and acceptance it was so
             tangible. I had never experienced such love before, I was
             overwhelmed by it
           </p>
