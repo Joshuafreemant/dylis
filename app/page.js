@@ -34,8 +34,8 @@ export default function Home() {
           The Extraordinary Growth and Expansion Coaching Program
         </p>
         <img
-          src="/empowered.jpg"
-          className=" mb-12 w-full h-full object-cover"
+          src="/dylis.jpeg"
+          className=" w-full h-full object-cover"
         />
       </div>
       <div className="px-10 text-black text-left md:text-center mt-5 font-medium md:px-[350px] md:mt-20 md:mb-20">
@@ -110,13 +110,13 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-12  px-16  md:px-40 md:mt-20">
+      <div className="mt-12  px-12  md:px-40 md:mt-20">
         <h2 className="text-pink-800 text-2xl md:text-4xl uppercase mb-4 font-semibold text-center heading-top">
           What we offer
         </h2>
 
         <div className="md:grid-cols-2 grid lg:grid-cols-3 gap-4">
-          <div className="bg-[#EDE8E2] shadow-md p-6 ">
+          <div className="bg-[#EDE8E2] shadow-md p-4 md:p-6 ">
             <div className="flex items-center gap-4">
               <img
                 className="h-3 w-3"
