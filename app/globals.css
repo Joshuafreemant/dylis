@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Saira+Semi+Condensed:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
 
@@ -26,47 +29,46 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 .color-custom {
   /* background-image: linear-gradient(91deg,#aa755f 29%,#aa755f 38%,#aa755f 53%,rgba(197,172,96,1) 100%); */
-  background-image: linear-gradient(30deg, #1593A7 29%, rgb(5, 65, 121) 100%);
-
+  background-image: linear-gradient(30deg, #1593a7 29%, rgb(5, 65, 121) 100%);
 }
 
 .bebas {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0px;
   font-size: 23px;
   text-transform: none;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   font-style: normal;
   display: block;
   cursor: pointer;
   border-bottom: 1px solid transparent;
-  transition: color .3s, border-bottom-color .3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
 }
 
-
 .bg-image {
-
   height: 100vh;
 }
 
 .about {
-
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../public/dylis2.jpeg') center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../public/dylis2.jpeg") center center;
   background-size: cover;
   background-position: center;
   color: white;
   min-height: 100vh;
   background-attachment: fixed;
-
 }
 
 /* .header {
@@ -74,7 +76,16 @@ body {
 } */
 
 .logo {
-  font-family: 'Dancing Script', cursive !important;
+  font-family: "Dancing Script", cursive !important;
+}
+.heading-landing {
+  font-family: "Love Light", cursive !important;
+}
+.heading-top {
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+.custom-font {
+  font-family: "Playfair Display", serif;
 }
 
 .close {
@@ -82,7 +93,26 @@ body {
   position: absolute;
   transform: translateY(80px);
   transition: transform 0.2s ease-out;
+}
+.bg-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/dylis.jpeg') center right;
+  background-size: cover;
 
+  /* Here's the same styles we applied to our content-div earlier */
+  color: white;
+  min-height: 50vh;
+ 
+}
+.bg-image-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('/empowered.jpg') center right;
+  background-size: cover;
+
+  /* Here's the same styles we applied to our content-div earlier */
+  color: white;
+  min-height: 50vh;
+ 
 }
 
 .open {
@@ -91,11 +121,9 @@ body {
   width: 100%;
   transition: transform 0.2s ease-in;
   transform: translateY(0px);
-
 }
 
 .sidebar-hide {
-
   transform: translateY(800px);
   left: 0;
   height: 90vh;
@@ -106,7 +134,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-
 .sidebar-show {
   left: 0;
   min-height: 100vh;
@@ -115,9 +142,8 @@ body {
   top: 0;
   z-index: 20;
   width: 100%;
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: translateY(0px);
-
 }
 
 .swiper {
@@ -126,7 +152,6 @@ body {
   padding-bottom: 50px;
   height: 100%;
   height: 91vh;
-
 }
 
 /* .swiper-slide {
@@ -143,10 +168,7 @@ body {
   object-fit: cover;
   object-position: center;
   height: 100vh;
-
 }
-
-
 
 .swiper-slide {
   text-align: center;
@@ -160,12 +182,7 @@ body {
   height: 91vh;
   background-size: cover;
   background-position: center;
-
 }
-
-
-
-
 
 .mySwiper2 {
   height: 80%;
@@ -205,23 +222,19 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
-
 }
 
 .thumbs {
   height: 10vh;
-
-
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
   .home .swiper-slide img {
     display: block;
     width: 100%;
     object-fit: cover;
     object-position: center;
     /* height: 160%; */
-
   }
 }
 
@@ -232,7 +245,6 @@ body {
   margin: 2px;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 .mailchimp input {
