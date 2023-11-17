@@ -43,7 +43,7 @@ export default function Page() {
         <form
           target="_blank"
           onSubmit={onSubmit}
-          action="https://formsubmit.co/joshuafreemant@gmail.com"
+          action="https://formsubmit.co/admin@dylischi.com"
           method="POST"
           className="px-5 flex flex-col items-start mt-8 pb-28"
         >
