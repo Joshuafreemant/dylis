@@ -125,7 +125,7 @@ export default function Home() {
           </button>
         </div>
 
-        <h2 className="md:mt-20 text-pink-800   mb-4 font-bold text-center moon-dance text-3xl md:text-4xl">
+        <h2 className="md:mt-20 mt-12 text-pink-800   mb-4 font-bold text-center moon-dance text-3xl md:text-4xl">
           What we offer
         </h2>
 
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-center md:mt-20">
+      <div className="text-center md:mt-20 mt-12">
           <button className="bg-pink-800 md:w-[250px]  text-white outline-none rounded-3xl px-4 py-2 mt-4">
             <Link rel="prefetch" href="/join">
               Join Now!
