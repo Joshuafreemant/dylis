@@ -35,8 +35,9 @@ export default function Page() {
         </h1>
         <div className="p-4">
           <p className="text-black text-center font-regular">
-            Your one step away from an extraordinary life Fill the form below
-            and I will be in touch with you soon
+            You are one step away from an extraordinary life. Please
+             Fill the form below
+            and I will be in touch with you as soon as possible
           </p>
         </div>
 
