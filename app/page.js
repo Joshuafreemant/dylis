@@ -21,7 +21,7 @@ export default function Home() {
             data-aos="fade-down"
             className=" text-white font-bold p-3 mt-2 text-6xl heading-top pr-[200px]"
           >
-            The Extraordinary Growth and Expansion Coaching Program
+            Your Journey to Wholeness and Greatness
           </p>
           <button
             data-aos="fade-down"
