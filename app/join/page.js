@@ -31,7 +31,7 @@ export default function Page() {
         <h1
           className={`moon-dance  text-4xl font-semibold text-pink-800 text-center py-6 md:py-12`}
         >
-          Empowers coaching program
+          Empowered coaching program
         </h1>
         <div className="p-4">
           <p className="text-black text-center font-regular">
