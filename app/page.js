@@ -39,7 +39,7 @@ export default function Home() {
           Empowered
         </h1>
 
-        <p className="bg-pink-800 text-white p-3 text-center mt-6 text-xl heading-top">
+        <p className="bg-pink-800 text-white py-3 px-8 text-center mt-6 text-xl heading-top">
         Your Journey to Wholeness and Greatness
         </p>
         <img src="/dylis.jpeg" className=" w-full h-full object-cover" />
