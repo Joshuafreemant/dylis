@@ -40,7 +40,7 @@ export default function Home() {
         </h1>
 
         <p className="bg-pink-800 text-white p-3 text-center mt-6 text-xl heading-top">
-          The Extraordinary Growth and Expansion Coaching Program
+        Your Journey to Wholeness and Greatness
         </p>
         <img src="/dylis.jpeg" className=" w-full h-full object-cover" />
       </div>
